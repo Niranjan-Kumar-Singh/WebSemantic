@@ -1,0 +1,292 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+body {
+    padding: 20px 20px 0 20px;
+    background-color: #E8F3F9;
+}
+
+.container {
+    min-height: 97.5vh;
+    position: relative;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    background-color: #2980B9;
+}
+
+header h1 {
+    color: #FFFFFF;
+}
+
+nav {
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #2797e1;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #F1C40F;
+}
+
+main {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 80px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    background-color: #ebf2f6;
+}
+
+section {
+    margin-bottom: 10px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    border: 1px solid #E5E8ED;
+}
+
+article {
+    padding: 30px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    border: 1px solid #E5E8ED;
+}
+
+aside {
+    height: 100%;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    background-color: #FFFFFF;
+    border: 1px solid #E5E8ED;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    font-size: 0.9em;
+    color: #FFFFFF;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #2980B9;
+}
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    section,
+    article,
+    aside {
+        padding: 30px;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    p,
+    a,
+    li {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px 10px 0 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    header,
+    nav,
+    main,
+    footer {
+        padding: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section,
+    article,
+    aside {
+        padding: 30px;
+    }
+
+    footer {
+        position: relative;
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    p,
+    a,
+    li {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 500px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    section,
+    article,
+    aside {
+        padding: 30px;
+    }
+
+    footer {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p,
+    a,
+    li {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        padding: 5px 5px 0 5px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    header,
+    nav,
+    main,
+    footer {
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section,
+    article,
+    aside {
+        padding: 30px;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    p,
+    a,
+    li {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 300px) {
+    body {
+        padding: 2px 2px 0 2px;
+    }
+
+    .container {
+        padding: 5px;
+    }
+
+    header,
+    nav,
+    main,
+    footer {
+        padding: 5px;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    section,
+    article,
+    aside {
+        padding: 30px;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p,
+    a,
+    li {
+        font-size: 0.9em;
+    }
+}
